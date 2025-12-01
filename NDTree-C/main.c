@@ -62,7 +62,7 @@ int main(){
 
 	/* we randomly generate "nbTry" solutions*/
 
-	int nbTry=100000;
+	int nbTry=10000000;
 	int sumW=0;
 
 	for (i=1;i<=nbTry;i++){

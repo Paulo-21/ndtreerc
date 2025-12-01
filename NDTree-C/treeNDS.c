@@ -20,6 +20,7 @@ double euclideanDistance(int* obj1,int* obj2,int nbCrit){
   double dist=0;
   for (i=0;i<nbCrit;i++){
     dist=dist+pow(obj1[i]-obj2[i],2);
+    //dist=dist+abs(obj1[i]-obj2[i]);
   }
   return dist;
 }

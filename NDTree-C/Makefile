@@ -1,4 +1,4 @@
-C_FLAGS = -Wall -Wextra -lm  -O2 -ggdb
+C_FLAGS = -Wall -Wextra -lm  -O3 -ggdb -flto
 
 all : main
 

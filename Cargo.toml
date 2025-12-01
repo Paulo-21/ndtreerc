@@ -5,5 +5,7 @@ edition = "2024"
 build = "build.rs"
 
 [dependencies]
+rand="*"
+
 [build-dependencies]
 cc = "*"
