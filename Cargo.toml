@@ -6,6 +6,7 @@ build = "build.rs"
 
 [dependencies]
 rand="*"
+mimalloc = "0.1.48"
 
 [build-dependencies]
 cc = "*"

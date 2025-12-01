@@ -8,5 +8,17 @@ fn main() {
         .file("NDTree-C/dominance.c")
         .include("NDTree-C")
         .compile("ndtree"); // nom de la lib générée
-    println!("cargo:rerun-if-changed=NDTree-C/treeNDS.c");
+    let sources = [
+        "NDTree-C/treeNDS.c",
+        "NDTree-C/tabNDS.c",
+        "NDTree-C/tabSol.c",
+        "NDTree-C/dominance.c",
+    ];
+
+    for file in &sources {
+        println!("cargo:rerun-if-changed={}", file);
+    }
+
+    // Si tu as des headers dans NDTree-C
+    println!("cargo:rerun-if-changed=NDTree-C");
 }

@@ -26,8 +26,8 @@ int main(){
 	printf("ND-Tree on min-knapsack problem\n");
 	srand(5);
 	int i,j,k;
-	int nbCrit=5;
-	int nbVar=100;
+	int nbCrit=8;
+	int nbVar=4;
 	//ND-Tree parameters
 	int nbMaxChildren=nbCrit+1; //max number of children of a node (the value NbCrit+1 is recommaded)
   int sizeMaxLocalArray=max_double(nbMaxChildren,20); //max size of the local array >= nbMaxChildren (size 20 is recommanded, except when the number of criteria >20)
@@ -62,7 +62,7 @@ int main(){
 
 	/* we randomly generate "nbTry" solutions*/
 
-	int nbTry=10000000;
+	int nbTry=100000;
 	int sumW=0;
 
 	for (i=1;i<=nbTry;i++){
