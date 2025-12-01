@@ -18,5 +18,6 @@ panic = 'abort'
 
 [profile.perf-debug]
 inherits = "release"
+debug=true
 lto = true
 strip=false
