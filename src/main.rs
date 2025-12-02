@@ -24,7 +24,7 @@ fn main() {
     let mut rng = rand::rng();
     let start = Instant::now();
     let r = ndtree::NdsTree::new(nbcrit, 4, nbcrit + 1, 20);
-    for k in 1..100500 {
+    for k in 1..100000 {
         for cr in obj1.iter_mut() {
             *cr = rng.random::<i32>().abs()
         }
@@ -34,7 +34,7 @@ fn main() {
     println!("ND-Tree : {}", start.elapsed().as_millis());
     let start = Instant::now();
     let mut list_pareto = ParetoList::new();
-    for k in 1..100500 {
+    for k in 1..100000 {
         for cr in obj1.iter_mut() {
             *cr = rng.random::<i32>().abs()
         }
